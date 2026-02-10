@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ganesh Boddupally | AI & Full-Stack Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-container">
+    <div class="site-name">GANESH BODDUPALLY</div>
+
+    <nav class="site-nav">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('main') }}#about">About</a>
+      <a href="{{ url_for('main') }}#services">Services</a>
+      <a href="{{ url_for('main') }}#projects">Projects</a>
+      <a href="{{ url_for('main') }}#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero">
+
+  <section class="hero-text">
+    <span class="hero-eyebrow">Portfolio</span>
+
+    <h1 class="hero-title">AI & Full-Stack Engineer</h1>
+
+    <p class="hero-subtitle">
+      Building intelligent, scalable, real-world web applications using AI & Flask.
+    </p>
+
+    <a href="{{ url_for('main') }}" class="primary-btn">
+      Explore My Work
+    </a>
+  </section>
+
+  <section class="hero-avatar">
+    <div id="avatar"></div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

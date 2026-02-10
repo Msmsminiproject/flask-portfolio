@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ganesh Boddupally | Professional Portfolio</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+        content="Ganesh Boddupally – AI & Full-Stack Engineer specializing in machine learning systems, data visualization, blockchain applications, and intelligent platforms.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='min.css') }}">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="header-container">
+    <div class="brand">GANESH BODDUPALLY</div>
+
+    <nav class="nav">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero-modern hero-full">
+
+  <div class="hero-wrapper">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-content">
+      <span class="hero-tag">AI & Full-Stack Engineer</span>
+
+      <h1>
+        Building intelligent<br>
+        digital systems
+      </h1>
+
+      <p>
+        I design and develop scalable applications using
+        Machine Learning, Data Visualization, and Blockchain
+        technologies with a focus on clarity, reliability,
+        and real-world impact.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="primary-btn">View Projects</a>
+        <a href="#contact" class="secondary-btn">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- RIGHT VISUAL (BALANCE) -->
+    <div class="hero-visual">
+      <div class="glass-panel"></div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about-modern">
+
+  <div class="about-grid">
+
+    <div class="about-title">
+      <h2>About Me</h2>
+    </div>
+
+    <div class="about-text">
+      <p>
+        My name is <strong>Ganesh Boddupally</strong>, an AI & Full-Stack Engineer
+        with hands-on experience in building intelligent, data-driven,
+        and secure web applications.
+      </p>
+
+      <p>
+        I have developed multiple end-to-end systems involving
+        machine learning models, interactive visualizations,
+        and blockchain-based architectures.
+      </p>
+
+      <p>
+        I focus on clean system design, maintainable code,
+        and solutions that scale efficiently in real-world environments.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="projects" class="section projects-classic">
+
+  <header class="projects-header">
+    <h2>Project Progression</h2>
+    <p>
+      Each project represents a step forward in complexity,
+      intelligence, and real-world impact.
+    </p>
+  </header>
+
+  <div class="projects-row">
+
+    <article class="project-box">
+      <span class="project-tag">Foundation</span>
+      <h3>Loan Approval Prediction</h3>
+      <p>
+        Machine learning–based loan approval system with
+        interactive data visualization for transparent,
+        explainable financial decisions.
+      </p>
+    </article>
+
+    <article class="project-box featured">
+      <span class="project-tag">Enterprise</span>
+      <h3>Blockchain E-Voting System</h3>
+      <p>
+        Secure and tamper-proof electronic voting system using
+        blockchain concepts and smart contract logic.
+      </p>
+    </article>
+
+    <article class="project-box">
+      <span class="project-tag">Intelligence</span>
+      <h3>Emotion-Aware Recommendation</h3>
+      <p>
+        Personalized multimedia recommendation platform that
+        adapts content based on detected user emotions.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact-section">
+
+  <div class="contact-grid">
+
+    <!-- LEFT CONTENT -->
+    <div class="contact-info">
+      <h2>Connect With Me</h2>
+      <p>
+        I am open to collaborations, freelance projects, and professional
+        opportunities. Feel free to reach out or connect through the platforms below.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a>
+        <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+        <a href="mailto:ganesh465b@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <form action="/contact" method="POST" class="contact-card">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  © 2026 Ganesh Boddupally. All rights reserved.
+</footer>
+
+</body>
+</html>
