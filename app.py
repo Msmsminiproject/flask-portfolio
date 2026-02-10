@@ -32,7 +32,7 @@ def contact():
 
     msg = EmailMessage()
     msg["Subject"] = "New Contact Message from Portfolio"
-    msg["From"] = f"Portfolio Website <{os.getenv('EMAIL_USER')}>"
+    msg["From"] = os.getenv("EMAIL_USER")
     msg["To"] = os.getenv("EMAIL_USER")
     msg["Reply-To"] = email
 
